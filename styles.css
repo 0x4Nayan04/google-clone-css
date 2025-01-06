@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+}
+.google-header {
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+body {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+button {
+  cursor: pointer;
+}
+.nav-contianer {
+  gap: 1rem;
+  align-items: center;
+  display: flex;
+}
+.text-link,
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.text-link:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+.nav-contianer-second .text-link {
+  display: none;
+}
+.icon-link {
+  font-size: 1.5 rem;
+  color: inherit;
+  width: 26px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+}
+.icon-link:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.img-btn {
+  border: none;
+  background: transparent;
+}
+.img-btn img {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+.title-Text {
+  font-size: 5rem;
+}
+.input-bard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.input-bard input {
+  flex: 1;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.input-bard:focus-within,
+.button-grid button:hover {
+}
+.input-bard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-bard div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.input-icon {
+  background: transparent;
+  border: none;
+}
+
+.input-icon:hover {
+  opacity: 0.7;
+}
+.button-grid {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.button-grid button {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  background: #f8f9fa;
+  border-radius: 0.25rem;
+}
+.button-grid button:hover {
+  border: 1px solid slategray;
+}
+.language-link {
+  color: royalblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+.language-link:hover {
+  text-decoration: underline;
+}
+.language-text {
+  font-size: 0.7rem;
+}
+footer {
+  background: #f2f2f2;
+  font-size: 0.8rem;
+}
+footer > div {
+  padding: 1rem;
+}
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Making it Responsive */
+/* The Style will aper when the screensize is more than 640px */
+@media (min-width: 640px) {
+  .footer-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  footer {
+    background: #f2f2f2;
+    font-size: 0.9rem;
+  }
+  .nav-contianer-second .text-link {
+    display: block;
+  }
+}
